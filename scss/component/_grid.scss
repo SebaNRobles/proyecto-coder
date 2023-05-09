@@ -1,0 +1,101 @@
+.grid1 {
+    display: grid;
+    grid-template-rows: repeat(4, 4rem);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "q w w u"
+    "q e e u"
+    "q r r u"
+    "q t t u"
+    ;
+    .p1 {
+        grid-area: w;
+    }
+
+    .p2 {
+        grid-area: e;
+    }
+    
+    .p3 {
+        grid-area: r;
+    }
+
+    .p4 {
+        grid-area: t;
+    }
+}
+
+
+.grid2{
+    display: grid;
+    grid-template-rows: repeat(4, 1f);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "z z"
+    "x x"
+    "c c"
+    "v v"
+    ;
+    .n1{
+        grid-area: z;
+        display: flex;
+        align-items: center;
+    }
+    .n2{
+        grid-area: x;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .n3{
+        grid-area: c;
+        display: flex;
+        align-items: center;
+    }
+    .n4{
+        grid-area: v;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}
+
+.grid3{
+    display: grid;
+    grid-template-rows: 1fr 14rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "n m"
+    "j k"
+    "o o"
+    ;
+    .l1{
+        grid-area: n;
+    }
+    
+    .l2{
+        grid-area: j;
+    }
+    
+    .l3{
+        grid-area: m;
+    
+    }
+    
+    .l4{
+        grid-area: k;
+    }
+    
+    .l5{
+        grid-area: o;
+    }
+}
+
+.grid4{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    input, textarea {
+        width: 100%;
+    }
+}

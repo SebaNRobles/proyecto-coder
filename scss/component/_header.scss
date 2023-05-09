@@ -1,0 +1,28 @@
+header {
+
+    nav {
+
+            div {
+                justify-content: right;
+                padding: 0% 20% 0% 10%;
+                a {
+                    justify-content: right;
+                    padding: 0% 20% 0% 10%;
+                    img {
+                        width: 140px;
+                        height: 90px;
+                    }
+                }
+
+                ul {
+                    
+                    li {
+                        display: inline;
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+    }
+}

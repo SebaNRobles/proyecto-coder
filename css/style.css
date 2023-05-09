@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(223, 211, 195);
+}
+
+header nav div {
+  justify-content: right;
+  padding: 0% 20% 0% 10%;
+}
+header nav div a {
+  justify-content: right;
+  padding: 0% 20% 0% 10%;
+}
+header nav div a img {
+  width: 140px;
+  height: 90px;
+}
+header nav div ul li {
+  display: inline;
+}
+header nav div ul li a {
+  text-decoration: none;
+}
+
+.newsletter {
+  text-align: center;
+  background-color: coral;
+  padding: 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+footer .cr {
+  font-size: small;
+  padding-top: 2rem;
+}
+footer img {
+  width: 40px;
+  height: 40px;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-rows: repeat(4, 4rem);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "q w w u" "q e e u" "q r r u" "q t t u";
+}
+.grid1 .p1 {
+  grid-area: w;
+}
+.grid1 .p2 {
+  grid-area: e;
+}
+.grid1 .p3 {
+  grid-area: r;
+}
+.grid1 .p4 {
+  grid-area: t;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-rows: repeat(4, 1f);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "z z" "x x" "c c" "v v";
+}
+.grid2 .n1 {
+  grid-area: z;
+  display: flex;
+  align-items: center;
+}
+.grid2 .n2 {
+  grid-area: x;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.grid2 .n3 {
+  grid-area: c;
+  display: flex;
+  align-items: center;
+}
+.grid2 .n4 {
+  grid-area: v;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-rows: 1fr 14rem 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "n m" "j k" "o o";
+}
+.grid3 .l1 {
+  grid-area: n;
+}
+.grid3 .l2 {
+  grid-area: j;
+}
+.grid3 .l3 {
+  grid-area: m;
+}
+.grid3 .l4 {
+  grid-area: k;
+}
+.grid3 .l5 {
+  grid-area: o;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid4 input, .grid4 textarea {
+  width: 100%;
+}
+
+@media screen and (max-width: 468px) {
+  .grid1 {
+    display: grid;
+    grid-template-rows: repeat(4, 4rem);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "w w w w" "e e e e" "r r r r" "t t t t";
+  }
+}
+.grid-container-1 {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(3, 30%);
+}
+.grid-container-1 p {
+  margin-inline: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.grid-container-1 p img {
+  margin: 10px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container-2 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50% 50%;
+  padding: 5% 0% 5% 0%;
+}
+.grid-container-2 div img {
+  width: 100%;
+  height: 100%;
+}
+.grid-container-2 div a {
+  text-decoration: none;
+  color: white;
+}
+
+.content-area .sidebar {
+  color: rgb(53, 53, 53);
+  font-family: "Montserrat", sans-serif;
+}
+.content-area .area {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.content-area .area a {
+  max-width: 400px;
+  text-align: center;
+  padding-top: 2rem;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */
