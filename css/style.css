@@ -28,9 +28,30 @@ header nav div ul li a {
 }
 
 .newsletter {
-  text-align: center;
-  background-color: coral;
+  background-color: #FFA07A;
   padding: 25px;
+}
+
+.nl-btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #CD5C5C;
+  padding: 10px 30px;
+  border: solid #CD5C5C 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 25px;
+  transition: 1000ms;
+  transform: translateY(0);
+  cursor: pointer;
+}
+
+.nl-btn:hover {
+  padding: 10px 50px;
+  background-color: #fff;
+  color: #cd5c5c;
+  border: solid 2px #cd5c5c;
 }
 
 footer {
@@ -46,25 +67,6 @@ footer .cr {
 footer img {
   width: 40px;
   height: 40px;
-}
-
-.grid1 {
-  display: grid;
-  grid-template-rows: repeat(4, 4rem);
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "q w w u" "q e e u" "q r r u" "q t t u";
-}
-.grid1 .p1 {
-  grid-area: w;
-}
-.grid1 .p2 {
-  grid-area: e;
-}
-.grid1 .p3 {
-  grid-area: r;
-}
-.grid1 .p4 {
-  grid-area: t;
 }
 
 .grid2 {
@@ -121,20 +123,74 @@ footer img {
 .grid4 {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
 .grid4 input, .grid4 textarea {
   width: 100%;
 }
+.grid4 img {
+  width: 40px;
+  height: 40px;
+}
 
-@media screen and (max-width: 468px) {
-  .grid1 {
-    display: grid;
-    grid-template-rows: repeat(4, 4rem);
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "w w w w" "e e e e" "r r r r" "t t t t";
+.form-body {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+}
+.form-body .form-contact label {
+  color: #362828;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.form-body .form-contact input, .form-body .form-contact textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #ffeded;
+  border: 2px solid #faf0f0;
+  color: #362828;
+  outline: none;
+}
+.form-body .form-contact input::placeholder, .form-body .form-contact textarea::placeholder {
+  color: #cab5b5;
+}
+.form-body .form-contact .form-text a {
+  color: #b27676;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.form-body .form-contact .bnt {
+  font-size: 16px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 25px;
+  background-color: #d94c4c;
+  box-shadow: 0 0 20px rgba(254, 0, 0, 0.4);
+  cursor: pointer;
+}
+.form-body .form-contact .btn:hover {
+  background-color: #e04040;
+}
+@media (max-width: 991px) {
+  .form-body form {
+    padding: 50px 30px;
+    width: 100%;
+  }
+  .form-body input {
+    padding: 15px;
   }
 }
+
 .grid-container-1 {
   display: grid;
   grid-template-rows: 100%;

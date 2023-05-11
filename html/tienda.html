@@ -53,26 +53,26 @@
 
     <!-- Body -->
     <div class="content-area">
-        <div class="sidebar container justify-content-center">
-            <section class="row container pt-4 pb-4">
-                <div class="col-lg-8">
-                    <label for="ordenar">Ordenar por:</label>
-                    <select name="ordenar" id="ordenar">
-                        <option value="por polularidad">Popularidad</option>
+        <div class="sidebar container justify-content-center pt-4">
+            <section class="row align-items-center mb-md-3">
+                <div class="col-6 col-md-3">
+                    <select class="form-select">
+                        <option value="user">Destacado</option>
                         <option value="preciomenor">Precio: menor a mayor</option>
                         <option value="preciomayor">Precio: mayor a menor</option>
                     </select>
                 </div>
-                <div class="col-lg-4">
-                    <label for="filtrar">Filtrar:</label>
-                    <select name="filtrar" id="filtrar">
-                        <optgroup label="Filtrar">
-                        <option value="remeras">Remeras</option>
-                        <option value="buzos">Buzos</option>
-                        <option value="pantalones">Pantalones</option>
-                        <option value="conjuntos">Conjuntos</option>
-                        </optgroup>
-                    </select>
+                <div class="col-6 col-md-3 offset-md-6">
+                    <div class="d-flex align-items-center">
+                        <label for="filtrar" class="col-md-3">Filtrar:</label>
+                        <select class="form-select" class="col-8">
+                            <option value="remeras">Remeras</option>
+                            <option value="buzos">Buzos</option>
+                            <option value="pantalones">Pantalones</option>
+                            <option value="conjuntos">Conjuntos</option>
+                            </optgroup>
+                        </select>
+                    </div>
                 </div>
             </section>
         </div>
@@ -98,15 +98,22 @@
     </div>
     <!-- Fin body-->
     <!-- NEWSLETTER -->
-    <div class="newsletter">
-        <div class="grid1">
-            <section class="p1 display-6">NEWSLETTER</section>
-            <section class="p2">UNITE AL CLUB</section>
-            <section class="p3">Obtené un 5%OFF para tu primera compra online y enterate de las últimas novedades!</section>
-            <form class="form-floating p4">
-                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
-                <label for="floatingInputInvalid">Invalid input</label>
-            </form>
+    <div class="container-fluid newsletter">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 text-center">
+                <div>
+                    <div class="mb-4 text-uppercase">NEWSLETTER</section>
+                    <h3 class="h1 mb-4">UNITE AL CLUB</h3>
+                    <p>Obtené un 5%OFF para tu primera compra online y enterate de las últimas novedades!</p>
+                    <div class="row">
+                        <form class="form-floating mb-3 col-lg-10">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput" class="ms-2">Email</label>
+                        </form>
+                        <input class="nl-btn col-lg-2 mb-3" type="submit" value="Enviar">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Fin NEWSLETTER-->

@@ -50,46 +50,56 @@
     <!-- Fin header-->
 
     <!-- Body-->
-    <div class="grid4 container justify-content-center text-center pt-4 pb-4">
-        <div class="contacto-info">
-            <h3>CONTACTANOS</h3>
-            <img src="../images/telefono.png" alt="telefono" width="30px" height="30px">
-            <p>+54 9 1157849345</p>
-            <img src="../images/email.png" alt="email" width="30px" height="30px">
-            <p>atencionalcliente@adidas.com.ar</p>
-            <img src="../images/ubicacion.png" alt="telefono" width="30px" height="30px">
-            <p>Buenos Aires, Argentina</p>
-            <h3>REDES SOCIALES</h3>
-            <a href="https://www.facebook.com/"><img src="../images/facebook.png" alt="Facebook" width="40px" height="40px"></a>
-            <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt="Instagram" width="40px" height="40px"></a>
-            <a href="https://www.youtube.com/"><img src="../images/youtube.png" alt="Youtube" width="40px" height="40px"></a>
-            <a href="https://twitter.com/"><img src="../images/gorjeo.png" alt="Twitter" width="40px" height="40px"></a>
-        </div>
-
-        <div class="contacto-form">
-            <p class="cont">Nombre</p>
-            <input type="text" name="nombre">
-            <p class="cont">Email</p>
-            <input type="text" name="email">
-            <p class="cont">Telefono (Opcional)</p>
-            <input type="text" name="telefono">
-            <p class="cont">Mensaje</p>
-            <textarea name="Mensaje" rows="10" cols="40" class="cont-1">Escribe aquí tus comentarios</textarea>
-            <input type="button" value="Enviar">
-        </div>
+    <div class="grid4 pt-4 pb-4">
+            <div class="text-center mb-4">
+                <h3>CONTACTANOS</h3> 
+                <img src="../images/telefono.png" alt="telefono">
+                <p>+54 9 1157849345</p>
+                <img src="../images/email.png" alt="email">
+                <p>atencionalcliente@adidas.com.ar</p>
+                <img src="../images/ubicacion.png" alt="telefono">
+                <p>Buenos Aires, Argentina</p>
+                <h3>REDES SOCIALES</h3>
+                <a href="https://www.facebook.com/"><img src="../images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/"><img src="../images/youtube.png" alt="Youtube"></a>
+                <a href="https://twitter.com/"><img src="../images/gorjeo.png" alt="Twitter"></a>
+            </div>  
+        <div class="row justify-content-center gx-0">
+            <form class="form-body col-lg-4" action="" method="post">
+                <div class="form-contact">
+                    <label for="text">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <label>Telefono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Telefono">
+                    <label>Mensaje</label>
+                    <textarea name="message" id="message" rows="5" cols="30" placeholder="Mensaje"></textarea>
+                    <input class="btn" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>  
     </div>
     <!-- Fin body-->
 
     <!-- Newsletter -->
-    <div class="newsletter">
-        <div class="grid1">
-            <section class="p1 display-6">NEWSLETTER</section>
-            <section class="p2">UNITE AL CLUB</section>
-            <section class="p3">Obtené un 5%OFF para tu primera compra online y enterate de las últimas novedades!</section>
-            <form class="form-floating p4">
-                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
-                <label for="floatingInputInvalid">Invalid input</label>
-            </form>
+    <div class="container-fluid newsletter">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 text-center">
+                <div>
+                    <div class="mb-4 text-uppercase">NEWSLETTER</section>
+                    <h3 class="h1 mb-4">UNITE AL CLUB</h3>
+                    <p>Obtené un 5%OFF para tu primera compra online y enterate de las últimas novedades!</p>
+                    <div class="row">
+                        <form class="form-floating mb-4 col-lg-10">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput" class="ms-2">Email</label>
+                        </form>
+                        <input class="nl-btn col-lg-2 mb-4" type="submit" value="Enviar">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Fin newsletter-->

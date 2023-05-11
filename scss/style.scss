@@ -12,21 +12,9 @@ html{
 @import "component/newsletter";
 @import "component/footer";
 @import "component/grid";
+@import "component/form";
 
 
-@media screen and (max-width: 468px) {
-    .grid1{
-     display: grid;
-     grid-template-rows: repeat(4, 4rem);
-     grid-template-columns: repeat(4, 1fr);
-     grid-template-areas: 
-     "w w w w"
-     "e e e e"
-     "r r r r"
-     "t t t t"
-     ;
-     }  
- }
 
  .grid-container-1 {
     display: grid; 
