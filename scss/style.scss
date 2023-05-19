@@ -13,7 +13,8 @@ html{
 @import "component/footer";
 @import "component/grid";
 @import "component/form";
-
+@import "base/mixins";
+@import "component/button";
 
 
  .grid-container-1 {
