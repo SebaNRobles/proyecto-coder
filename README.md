@@ -1,17 +1,12 @@
 <h1 align="center">Hola 👋, Soy Sebastian Nicolas Robles</h1>
-<h3 align="center">A passionate frontend developer from Argentina</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sebanrobles&label=Visitas%20al%20perfil&color=0e75b6&style=flat" alt="sebanrobles" /> </p>
 
-- 🔭 Actualmente estoy trabajando en un **proyecto para coderhouse**
-
-- 🌱 Actualmente estoy aprendiendo a **programar webs**
-
-- 👨‍💻 Todos mis proyectos están disponibles en [sebastianrobles.com](sebastianrobles.com)
-
-- 📫 Como llegar a mi **sebanrobles@gmail.com**
-
-- 📄 Conoce mis experiencias [https://www.linkedin.com/in/sebastiannrobles/](https://www.linkedin.com/in/sebastiannrobles/)
+- Esta es la presentación sobre mi proyecto de **Adidas**
+- Donde pude implementar todo lo aprendido en el curso de coder y lo investigado por fuera.
+- Es mi primera página web, así que espero que les guste.
+- Como llegar a mi **sebanrobles@gmail.com**
+- Conoce mis experiencias [https://www.linkedin.com/in/sebastiannrobles/](https://www.linkedin.com/in/sebastiannrobles/)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
