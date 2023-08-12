@@ -17,7 +17,8 @@
 
     <!-- Script -->
     <script src="https://kit.fontawesome.com/86ddaae17e.js" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,25 +89,48 @@
                 </div>
             </section>
         </div>
-        <div class="area">
-            <a href="tienda.html"><img src="../images/ropa1.jpg" alt="conjunto brasil" class="img-fluid">Conjunto Brasil</a>
-            <a href="tienda.html"><img src="../images/ropa2.jpg" alt="conjunto negro" class="img-fluid">Conjunto Negro</a>
-            <a href="tienda.html"><img src="../images/ropa3.jpg" alt="conjunto azul" class="img-fluid">Conjunto Azul</a>
-            <a href="tienda.html"><img src="../images/ropa1.jpg" alt="conjunto brasil" class="img-fluid">Conjunto Brasil</a>
-            <a href="tienda.html"><img src="../images/ropa2.jpg" alt="conjunto negro" class="img-fluid">Conjunto Negro</a>
-            <a href="tienda.html"><img src="../images/ropa3.jpg" alt="conjunto azul" class="img-fluid">Conjunto Azul</a>
-            <a href="tienda.html"><img src="../images/ropa1.jpg" alt="conjunto brasil" class="img-fluid">Conjunto Brasil</a>
-            <a href="tienda.html"><img src="../images/ropa2.jpg" alt="conjunto negro"class="img-fluid">Conjunto Negro</a>
-            <a href="tienda.html"><img src="../images/ropa3.jpg" alt="conjunto azul" class="img-fluid">Conjunto Azul</a>
-            <a href="tienda.html"><img src="../images/ropa1.jpg" alt="conjunto brasil" class="img-fluid">Conjunto Brasil</a>
-            <a href="tienda.html"><img src="../images/ropa2.jpg" alt="conjunto negro" class="img-fluid">Conjunto Negro</a>
-            <a href="tienda.html"><img src="../images/ropa1.jpg" alt="conjunto brasil" class="img-fluid">Conjunto Brasil</a>
-            <a href="tienda.html"><img src="../images/ropa2.jpg" alt="conjunto negro" class="img-fluid">Conjunto Negro</a>
-            <a href="tienda.html"><img src="../images/ropa3.jpg" alt="conjunto azul" class="img-fluid">Conjunto Azul</a>
-            <a href="tienda.html"><img src="../images/ropa1.jpg" alt="conjunto brasil" class="img-fluid">Conjunto Brasil</a>
-            <a href="tienda.html"><img src="../images/ropa2.jpg" alt="conjunto negro" class="img-fluid">Conjunto Negro</a>
-            <a href="tienda.html"><img src="../images/ropa3.jpg" alt="conjunto azul" class="img-fluid">Conjunto Azul</a>
+
+        <div id="carrito-container" class="hidden">
+            <h2>Carrito</h2>
+            <ul id="carrito"></ul>
+            <button id="limpiar-carrito">Limpiar Carrito</button>
         </div>
+        <div id="mostrar-carrito">
+            <img src="/images/carrito.png" alt="Carrito" width="50" height="50">
+        </div>
+        <div id="productos" class="area">
+            <div class="producto">
+                <img src="../images/ropa1.jpg" alt="Campera Amarilla" class="img-fluid">
+                <button class="agregar-carrito" data-id="1">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="../images/ropa2.jpg" alt="Buzo Negro" class="img-fluid">
+                <button class="agregar-carrito" data-id="2">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="../images/ropa3.jpg" alt="Rompevientos Azul" class="img-fluid">
+                <button class="agregar-carrito" data-id="3">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="../images/ropa4.jpg" alt="Camiseta de entrenamiento AFA" class="img-fluid">
+                <button class="agregar-carrito" data-id="4">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="../images/ropa5.jpg" alt="Camiseta de entrenamiento AFA Femenino" class="img-fluid">
+                <button class="agregar-carrito" data-id="5">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="../images/ropa6.jpg" alt="Remera Azul" class="img-fluid">
+                <button class="agregar-carrito" data-id="6">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="../images/ropa7.jpg" alt="Rompevientos AFA" class="img-fluid">
+                <button class="agregar-carrito" data-id="7">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="../images/ropa8.jpg" alt="Rompevientos Negra" class="img-fluid">
+                <button class="agregar-carrito" data-id="8">Agregar al carrito</button>
+            </div>
     </section>
     <!-- Fin body-->
     <!-- NEWSLETTER -->

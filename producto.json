@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Campera Brasil",
+        "descripcion": "Campera basica amarilla con verde.",
+        "precio": 25000,
+        "imagen": "images/ropa1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Buzo Negro",
+        "descripcion": "Buzo 3 tiras corto holgado negro.",
+        "precio": 20000,
+        "imagen": "images/ropa2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Campera Rompevientos",
+        "descripcion": "Campera Rompevientos Azul Marino.",
+        "precio": 50000,
+        "imagen": "images/ropa3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Camiseta AFA",
+        "descripcion": "Camiseta plantel masculino de entrenamiento.",
+        "precio": 25000,
+        "imagen": "images/ropa4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Camiseta AFA Femenino",
+        "descripcion": "Camiseta plantel femenino de entrenamiento.",
+        "precio": 25000,
+        "imagen": "images/ropa5.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Remera Azul",
+        "descripcion": "Remera simple adidas azul.",
+        "precio": 18000,
+        "imagen": "images/ropa6.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Rompevientos AFA",
+        "descripcion": "Campera rompevientos AFA.",
+        "precio": 35000,
+        "imagen": "images/ropa7.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Rompevientos Negra",
+        "descripcion": "Campera rompevientos Negro con colores",
+        "precio": 42000,
+        "imagen": "images/ropa8.jpg"
+    }
+]
