@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const carritoContainer = document.getElementById('carrito-container');
     const mostrarCarritoBtn = document.getElementById('mostrar-carrito');
     const limpiarCarritoButton = document.getElementById("limpiar-carrito");
+    const realizarCompraBtn = document.getElementById('realizar-compra-btn');
 
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
@@ -49,6 +50,20 @@ document.addEventListener("DOMContentLoaded", function() {
         
     });
 
+    realizarCompraBtn.addEventListener('click', () => {
+
+        Swal.fire({
+            icon: 'success',
+            title: '¡Compra Realizada!',
+            text: '¡Tu compra ha sido realizada con éxito!',
+            showConfirmButton: true
+        });
+        
+        carrito = [];
+        localStorage.removeItem("carrito");
+        actualizarCarrito();
+    });
+
     limpiarCarritoButton.addEventListener('click', function() {
         carrito = [];
         localStorage.removeItem("carrito");
@@ -69,6 +84,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     mostrarCarritoBtn.addEventListener('click', () => {
         carritoContainer.classList.toggle('hidden');
+        const totalContainer = document.getElementById('total');
+        totalContainer.textContent = `Total: $${calcularTotal().toFixed(2)}`;
     });
 
     actualizarCarrito();
